@@ -1,7 +1,7 @@
 {
     "name": "ckeditor5-editor-decoupled-with-collaboration",
     "version": "0.0.1",
-    "main": "build/decoupled-editor-with-collaboration.js"
+    "main": "build/decoupled-editor-with-collaboration.js",
     "description": "ckeditor5 in decoupled mode with collaboration and related plugins installed",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
