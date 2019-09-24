@@ -134,4 +134,5 @@ DecoupledEditor.defaultConfig = {
         }
 };
 
-export default { Watchdog, DecoupledEditor };
+export default { DecoupledEditor };
+//export default { Watchdog, DecoupledEditor };
