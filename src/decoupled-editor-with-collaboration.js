@@ -41,7 +41,7 @@ import RealTimeCollaborativeComments from '@ckeditor/ckeditor5-real-time-collabo
 import RealTimeCollaborativeTrackChanges from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativetrackchanges';
 import PresenceList from '@ckeditor/ckeditor5-real-time-collaboration/src/presencelist';
 
-export class DecoupledEditor extends BaseEditor {}
+class DecoupledEditor extends BaseEditor {}
 
 DecoupledEditor.builtinPlugins = [
         Alignment,
@@ -133,6 +133,8 @@ DecoupledEditor.defaultConfig = {
                 toolbar: [ 'comment' ]
         }
 };
+
+export DecoupledEditor;
 
 //export default { DecoupledEditor };
 //export default { Watchdog, DecoupledEditor };
