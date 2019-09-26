@@ -41,7 +41,7 @@ import RealTimeCollaborativeComments from '@ckeditor/ckeditor5-real-time-collabo
 import RealTimeCollaborativeTrackChanges from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativetrackchanges';
 import PresenceList from '@ckeditor/ckeditor5-real-time-collaboration/src/presencelist';
 
-class DecoupledEditor extends BaseEditor {}
+export default class DecoupledEditor extends BaseEditor {}
 
 DecoupledEditor.builtinPlugins = [
         Alignment,
@@ -134,7 +134,6 @@ DecoupledEditor.defaultConfig = {
         }
 };
 
-export DecoupledEditor;
+// TODO -- figure out how to include Watchdog in the output
 
-//export default { DecoupledEditor };
-//export default { Watchdog, DecoupledEditor };
+// export default { Watchdog, DecoupledEditor };
