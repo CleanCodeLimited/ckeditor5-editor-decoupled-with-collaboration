@@ -35,16 +35,16 @@ module.exports = {
 
     optimization: {
         minimizer: [
-            new UglifyJsWebpackPlugin( {
-                // To enable sourcemap, uncomment this line.
-                // sourceMap: true,
-                uglifyOptions: {
-                    output: {
-                        // Preserve CKEditor 5 license comments.
-                        comments: /^!/
-                    }
-                }
-            } )
+            // new UglifyJsWebpackPlugin( {
+            //     // To enable sourcemap, uncomment this line.
+            //     // sourceMap: true,
+            //     uglifyOptions: {
+            //         output: {
+            //             // Preserve CKEditor 5 license comments.
+            //             comments: /^!/
+            //         }
+            //     }
+            // } )
         ]
     },
 
