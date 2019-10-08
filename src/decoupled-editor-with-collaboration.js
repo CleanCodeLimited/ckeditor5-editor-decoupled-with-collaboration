@@ -36,16 +36,20 @@ import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 
+
 import RealTimeCollaborativeEditing from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativeediting';
 import RealTimeCollaborativeComments from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativecomments';
 import RealTimeCollaborativeTrackChanges from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativetrackchanges';
 import PresenceList from '@ckeditor/ckeditor5-real-time-collaboration/src/presencelist';
+import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave';
+
 
 export default class DecoupledEditor extends BaseEditor {}
 
 DecoupledEditor.builtinPlugins = [
         Alignment,
         Autoformat,
+        Autosave,
         BlockQuote,
         Bold,
         CKFinder,
