@@ -72,6 +72,17 @@ module.exports = {
                 use: [ 'raw-loader' ]
             },
             {
+                test: /\.js$/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [ require( '@babel/preset-env' ) ]
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.css$/,
                 use: [
                     {
@@ -89,17 +100,6 @@ module.exports = {
                             minify: true
                         } )
                     },
-                ]
-            },
-            {
-                test: /ckeditor5-[^\/\\]+[\/\\].*\.js$/,
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: [ require( '@babel/preset-env' ) ]
-                        }
-                    }
                 ]
             },
         ]
